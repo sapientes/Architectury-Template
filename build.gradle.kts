@@ -8,6 +8,8 @@ plugins {
 }
 
 val minecraftVersion: String by extra
+val yarnVersion: String by extra
+val yarnNeoforgePatchVersion: String by extra
 val modVersion: String by extra
 val mavenGroup: String by extra
 val customArchivesBaseName: String by extra
@@ -37,7 +39,10 @@ subprojects {
 
     dependencies {
         "minecraft"("com.mojang:minecraft:$minecraftVersion")
-        "mappings"(project.the<LoomGradleExtensionAPI>().officialMojangMappings())
+        "mappings" (project.the<LoomGradleExtensionAPI>().layered {
+            mappings("net.fabricmc:yarn:${yarnVersion}:v2")
+            mappings("dev.architectury:yarn-mappings-patch-neoforge:${yarnNeoforgePatchVersion}")
+        })
     }
 
     java {

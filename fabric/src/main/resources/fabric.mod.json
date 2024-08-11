@@ -15,9 +15,11 @@
 
   "environment": "*",
   "entrypoints": {
-    "main": ["example.example.example.fabric.ExampleFabric"],
-    "client": ["example.example.example.fabric.ExampleClientFabric"],
-    "server": ["example.example.example.fabric.ExampleServerFabric"]
+    "main": ["ovh.sapientes.example.fabric.ExampleModFabric"],
+    "client": ["ovh.sapientes.example.fabric.client.ExampleModFabricClient"],
+    "server": [
+      "ovh.sapientes.example.fabric.ExampleModFabricServer"
+    ]
   },
   "mixins": [
     "example-fabric.mixins.json",
