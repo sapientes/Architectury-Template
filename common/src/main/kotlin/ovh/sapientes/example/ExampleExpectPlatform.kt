@@ -1,4 +1,4 @@
-package net.examplemod
+package ovh.sapientes.example
 
 import dev.architectury.injectables.annotations.ExpectPlatform
 import java.nio.file.Path
@@ -13,9 +13,9 @@ object ExampleExpectPlatform {
      *
      *
      * Example:
-     * Expect: net.examplemod.ExampleExpectPlatform#getConfigDirectory()
-     * Actual Fabric: net.examplemod.fabric.ExampleExpectPlatformImpl#getConfigDirectory()
-     * Actual Forge: net.examplemod.forge.ExampleExpectPlatformImpl#getConfigDirectory()
+     * Expect: ovh.sapientes.example.ExampleExpectPlatform#getConfigDirectory()
+     * Actual Fabric: ovh.sapientes.example.fabric.ExampleExpectPlatformImpl#getConfigDirectory()
+     * Actual Forge: ovh.sapientes.example.forge.ExampleExpectPlatformImpl#getConfigDirectory()
      *
      *
      * [You should also get the IntelliJ plugin to help with @ExpectPlatform.](https://plugins.jetbrains.com/plugin/16210-architectury)

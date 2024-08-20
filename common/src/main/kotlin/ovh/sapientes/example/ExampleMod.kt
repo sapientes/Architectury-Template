@@ -1,9 +1,9 @@
-package net.examplemod
+package ovh.sapientes.example
 
 import dev.architectury.registry.CreativeTabRegistry
 import dev.architectury.registry.registries.DeferredRegister
 import dev.architectury.registry.registries.RegistrySupplier
-import net.examplemod.ExampleExpectPlatform.getConfigDirectory
+import ovh.sapientes.example.ExampleExpectPlatform.getConfigDirectory
 import net.minecraft.core.registries.Registries
 import net.minecraft.network.chat.Component
 import net.minecraft.resources.ResourceLocation

@@ -1,6 +1,6 @@
-package net.examplemod.fabric
+package ovh.sapientes.example.forge
 
-import org.quiltmc.loader.api.QuiltLoader
+import net.minecraftforge.fml.loading.FMLPaths
 import java.nio.file.Path
 
 object ExampleExpectPlatformImpl {
@@ -9,6 +9,6 @@ object ExampleExpectPlatformImpl {
      */
     @JvmStatic // Jvm Static is required so that java can access it
     fun getConfigDirectory(): Path {
-        return QuiltLoader.getConfigDir()
+        return FMLPaths.CONFIGDIR.get()
     }
 }

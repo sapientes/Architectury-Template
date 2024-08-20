@@ -1,4 +1,4 @@
-package net.examplemod.fabric
+package ovh.sapientes.example.fabric
 
 import net.fabricmc.loader.api.FabricLoader
 import java.nio.file.Path
